@@ -80,7 +80,7 @@
     "@codemirror/search": "^6.5.11",
     "@codemirror/state": "^6.5.2",
     "@codemirror/view": "^6.38.4",
-    "@headlessui/react": "^2.2.9",
+    "@headlessui/react": "^2.2.10",
     "@heroicons/react": "^2.2.0",
     "@iconify-json/lucide": "^1.2.73",
     "@iconify-json/svg-spinners": "^1.2.4",
