@@ -175,7 +175,7 @@
   "devDependencies": {
     "@blitz/eslint-plugin": "0.1.0",
     "@cloudflare/workers-types": "^4.20251004.0",
-    "@electron/notarize": "^2.5.0",
+    "@electron/notarize": "^3.1.1",
     "@iconify-json/ph": "^1.2.2",
     "@iconify-json/simple-icons": "^1.2.54",
     "@iconify-json/vscode-icons": "^1.2.2",
