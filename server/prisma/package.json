@@ -1,7 +1,7 @@
 {
-  "name": "@aether-account/prisma",
+  "name": "@aether-ai/prisma",
   "version": "1.0.0",
-  "description": "Prisma schema and database layer for the Aether Account Database Layer.",
+  "description": "Prisma schema and database layer for the Aether AI Database Layer.",
   "private": true,
   "main": "schema.prisma",
   "scripts": {

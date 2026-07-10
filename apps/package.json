@@ -1,7 +1,7 @@
 {
-  "name": "@aether-account/apps",
+  "name": "@aether-ai/apps",
   "version": "1.0.0",
-  "description": "Frontend application for Aether Account App & Mobile Experience",
+  "description": "Frontend application for Aether AI App & Mobile Experience",
   "private": true,
   "type": "module",
   "scripts": {

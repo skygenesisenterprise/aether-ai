@@ -8,17 +8,10 @@ export const AUTH_ROUTES = [
 ] as const;
 
 export const PLATFORM_ROUTES = [
-  "/contacts",
-  "/data",
-  "/home",
-  "/password",
-  "/security",
-  "/user-info",
-  "/wallet",
-  "/drive",
-  "/familly",
+  "/",
   "/settings",
-  "/applications",
+  "/profile",
+  "/projects",
   DEFAULT_PLATFORM_ROUTE,
 ] as const;
 

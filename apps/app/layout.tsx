@@ -5,11 +5,11 @@ import "@/styles/globals.css";
 
 export const metadata: Metadata = {
   title: {
-    template: "%s | Aether Account",
-    default: "Aether Account",
+    template: "%s | Aether AI",
+    default: "Aether AI",
   },
   description:
-    "Your cloud hub to securely manage all Aether services, profiles, and preferences in one unified dashboard. Fully open-source, fully cloud.",
+    "Aether AI is a self-hosted platform that empowers developers to generate code, collaborate, and interact with AI seamlessly.",
   icons: {
     icon: [
       {
