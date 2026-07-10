@@ -1,0 +1,15 @@
+packages:
+  - "apps"
+  - "tools"
+  - "tests"
+  - "options"
+  - "package/snap"
+  - "server/prisma"
+  - "package/node"
+  - "package/github"
+  - "package/vscode"
+
+
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver

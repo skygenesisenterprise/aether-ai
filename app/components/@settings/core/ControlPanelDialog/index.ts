@@ -1,1 +1,0 @@
-export { ControlPanelDialog } from './ControlPanelDialog';
