@@ -35,7 +35,7 @@ RUN mkdir -p app/next/fond/google
 RUN printf 'module.exports = {};\n' > app/next/fond/google/index.js
 RUN printf '{"name":"google","version":"0.0.0"}\n' > app/next/fond/google/package.json
 
-RUN pnpm install --filter @aether-meet/apps... --no-frozen-lockfile
+RUN pnpm install --filter @aether-ai/apps... --no-frozen-lockfile
 RUN BUILD_WEB_STATIC=true pnpm --dir app build
 
 # ── Prisma ──────────────────────────────────────────────────────────────────
@@ -94,10 +94,10 @@ COPY --from=node-builder /app/app/out ./out
 COPY --from=node-builder /tmp/prisma/ ./prisma/
 
 # ── Go Backend Binary ────────────────────────────────────────────────────────
-COPY --from=go-builder /app/server/aether-meet ./server/aether-meet
+COPY --from=go-builder /app/server/aether-ai ./server/aether-ai
 
 # Compatibilité avec anciens scripts éventuels
-RUN ln -s /app/server/aether-meet /app/server/etheriatimes-api
+RUN ln -s /app/server/aether-ai /app/server/aether-ai
 
 # ── Entrypoint ───────────────────────────────────────────────────────────────
 COPY entrypoint-cloud.sh /entrypoint-cloud.sh

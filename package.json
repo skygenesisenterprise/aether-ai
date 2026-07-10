@@ -1,11 +1,11 @@
 {
-  "name": "aether-account",
+  "name": "aether-ai",
   "version": "1.0.0",
-  "description": "Aether Account is a lightweight, open-source account management client built for privacy, speed, and seamless integration within the Aether Office ecosystem",
+  "description": "Aether AI is a self-hosted platform that empowers developers to generate code, collaborate, and interact with AI seamlessly.",
   "private": true,
   "type": "module",
   "workspaces": [
-    "app",
+    "apps",
     "tools",
     "options",
     "package/node",
@@ -17,15 +17,15 @@
     "server/prisma"
   ],
   "scripts": {
-    "dev": "concurrently \"pnpm --filter app dev\" \"pnpm --filter server dev\"",
-    "dev:frontend": "pnpm --filter app dev",
+    "dev": "concurrently \"pnpm --filter apps/dev\" \"pnpm --filter server dev\"",
+    "dev:frontend": "pnpm --filter apps/dev",
     "dev:backend": "pnpm --filter server dev",
     "dev:cli": "pnpm --filter cli dev",
     "build": "pnpm -r build",
-    "build:frontend": "pnpm --filter app build",
+    "build:frontend": "pnpm --filter apps/build",
     "build:backend": "pnpm --filter server build",
     "build:cli": "pnpm --filter cli build",
-    "start": "concurrently \"pnpm --filter app start\" \"pnpm --filter server start\"",
+    "start": "concurrently \"pnpm --filter apps/start\" \"pnpm --filter server start\"",
     "lint": "pnpm -r lint",
     "lint:fix": "pnpm -r lint:fix",
     "typecheck": "pnpm -r typecheck",
@@ -37,7 +37,7 @@
     "db:studio": "prisma studio",
     "db:seed": "prisma db seed",
     "cli": "pnpm --filter cli cli",
-    "docker:build": "docker build -t aether-mailer .",
+    "docker:build": "docker build -f Dockerfile.cloud -t skygenesisenterprise/aether-ai:latest .",
     "docker:run": "docker-compose up -d",
     "docker:stop": "docker-compose down",
     "prepare": "husky install",
@@ -70,20 +70,19 @@
   "packageManager": "pnpm@8.15.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/skygenesisenterprise/giteria.git"
+    "url": "https://github.com/skygenesisenterprise/aether-ai.git"
   },
   "keywords": [
-    "vault",
-    "password-manager",
-    "password-storage",
-    "password-security",
-    "password-management",
-    "password-generator",
-    "password-manager",
-    "password-storage",
-    "password-security",
-    "password-management",
-    "password-generator"
+    "ai",
+    "artificial-intelligence",
+    "code-generation",
+    "developer-tools",
+    "self-hosted",
+    "open-source",
+    "collaboration",
+    "code-assistant",
+    "code-completion",
+    "code-review"
   ],
   "author": {
     "name": "Sky Genesis Enterprise",
@@ -92,9 +91,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/skygenesisenterprise/giteria/issues"
+    "url": "https://github.com/skygenesisenterprise/aether-ai/issues"
   },
-  "homepage": "https://github.com/skygenesisenterprise/giteria#readme",
+  "homepage": "https://github.com/skygenesisenterprise/aether-ai#readme",
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
       "eslint --fix --quiet",

@@ -45,7 +45,7 @@ services:
       dockerfile: Dockerfile.cloud
       args:
         DATABASE_URL: postgresql://${PG_USER:-postgres}:${PG_PASS:-postgres}@postgresql:5432/${PG_DB:-postgres}
-    image: skygenesisenterprise/aether-account:${APP_IMAGE_TAG:-cloud}
+    image: skygenesisenterprise/aether-ai:${APP_IMAGE_TAG:-cloud}
     restart: unless-stopped
     env_file:
       - .env
@@ -77,7 +77,7 @@ services:
       REDIS_PASSWORD: ${REDIS_PASSWORD:-redis-default-password}
       REDIS_DB: "0"
       REDIS_URL: redis://default:${REDIS_PASSWORD:-redis-default-password}@redis:6379/0
-      REDIS_KEY_PREFIX: aether-account:v1
+      REDIS_KEY_PREFIX: aether-ai:v1
       REDIS_DEFAULT_TTL: "300"
 
     depends_on:
@@ -96,7 +96,7 @@ services:
       dockerfile: Dockerfile.cloud
       args:
         DATABASE_URL: postgresql://${PG_USER:-postgres}:${PG_PASS:-postgres}@postgresql:5432/${PG_DB:-postgres}
-    image: skygenesisenterprise/aether-account:${APP_IMAGE_TAG:-cloud}
+    image: skygenesisenterprise/aether-ai:${APP_IMAGE_TAG:-cloud}
     restart: unless-stopped
     env_file:
       - .env
@@ -124,7 +124,7 @@ services:
       REDIS_PASSWORD: ${REDIS_PASSWORD:-redis-default-password}
       REDIS_DB: "0"
       REDIS_URL: redis://default:${REDIS_PASSWORD:-redis-default-password}@redis:6379/0
-      REDIS_KEY_PREFIX: aether-account:v1
+      REDIS_KEY_PREFIX: aether-ai:v1
 
     depends_on:
       postgresql:
